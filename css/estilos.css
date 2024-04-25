@@ -1,0 +1,43 @@
+:root{
+    --color-text-titulos: #ffffff;
+    --color-texto: rgba(255, 255, 255, 0.867);
+    --color-acento: #E6E4C6;
+    --color-fondo: #0E3A47;
+    --color-fondo-tarjeta: #ffffff27;
+  }
+  
+  body{
+    background-color: var(--color-fondo);
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas: 
+      "aside header"
+      "aside main"
+      "footer footer";
+  }
+
+  header{
+grid-area: header;
+  }
+
+  aside{
+grid-area: aside;
+  }
+
+  main{
+grid-area: main;
+  }
+  
+  footer{
+grid-area: footer;
+  }
+
+
+
+
+/* Estilos del Header*/
+header img{
+    width: 300px;
+}
