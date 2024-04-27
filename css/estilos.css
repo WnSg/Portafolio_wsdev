@@ -11,7 +11,8 @@
 
 body {
     margin: 0;
-    background-color: var(--color-fondo);
+    background: rgb(46, 125, 161);
+    background: linear-gradient(0deg, rgba(46, 125, 161, 1) 21%, rgba(56, 188, 176, 1) 92%);
     color: var(--color-texto);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: grid;
@@ -74,7 +75,7 @@ footer {
     text-align: center;
     grid-area: footer;
     color: var(--color-texto);
-    
+
 
 }
 
@@ -82,7 +83,7 @@ footer a {
     color: var(--color-texto);
     background-color: unset;
     display: block;
-    
+
 }
 
 footer i {
@@ -101,10 +102,7 @@ footer h3 {
     text-align: left;
     margin-left: 10px;
     margin-right: 10px;
-    
 
-
-    
 }
 
 
@@ -131,11 +129,11 @@ header {
 }
 
 header img {
-    max-height: 250px;
-    margin-right: 50px;
+    max-height: 300px;
     flex-shrink: 1;
-    border-radius: 50%;
-
+    margin-right: 50px;
+    margin-top: auto;
+    
 
 }
 
@@ -153,7 +151,7 @@ main {
     border-radius: 5px;
 }
 
-.tarjeta div {
+.experiencia div {
     margin: 0 20px;
 }
 
@@ -169,6 +167,16 @@ main {
     overflow: hidden;
     margin-right: 5px;
 }
+.experiencia img{    
+    height: 150px;
+    object-fit: cover;
+    filter:grayscale(0.8);
+    transition: 0.2s;
+  }
+
+  .experiencia:hover img{
+    filter:grayscale(0);
+  }
 
 .experiencia a {
     margin-top: auto;
@@ -182,3 +190,18 @@ main {
     flex-wrap: wrap;
     gap: 20px;
 }
+
+/* Estilos para hacer la pagina responsiva*/
+@media(max-width:650px){
+    header{
+      margin-left: unset;
+      border-radius: unset;
+    }
+    header img{
+      display: none;
+    }
+    body{
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "aside" "main" "footer";
+    }
+  }
