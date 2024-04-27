@@ -13,7 +13,7 @@ body {
     margin: 0;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-areas:
@@ -31,17 +31,19 @@ h6 {
     color: var(--color-text-titulos);
 }
 
-p, span{
+p,
+span {
     color: var(--color-texto);
-  }
+}
 
 /* Estilos del aside*/
 aside {
     grid-area: aside;
-    padding: 0px 20px;
+    padding: 0px 5px;
+    margin: 10px;
 }
 
-aside div{
+aside div {
     border-bottom: 2px solid var(--color-fondo);
 }
 
@@ -50,26 +52,58 @@ aside div{
 progress {
     -webkit-appearance: none;
     width: 100%;
-  }
-  ::-webkit-progress-inner-element {
-    height: 5px;
-  }
+}
 
-  ::-webkit-progress-value {
+::-webkit-progress-inner-element {
+    height: 5px;
+}
+
+::-webkit-progress-value {
     background-color: var(--color-enlaces_a);
-  }
-  
-  ::-webkit-progress-bar{
+}
+
+::-webkit-progress-bar {
     background-color: var(--color-fondo);
-  }
+}
 
 
 
 
 /* Estilos del footer*/
 footer {
+    text-align: center;
     grid-area: footer;
     color: var(--color-texto);
+    
+
+}
+
+footer a {
+    color: var(--color-texto);
+    background-color: unset;
+    display: block;
+    
+}
+
+footer i {
+    color: var(--color-texto);
+    background-color: unset;
+
+    margin-left: 10px;
+}
+
+footer h3 {
+    padding: 10px 0px 10px 10px;
+}
+
+
+.contacto {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+
     
 }
 
@@ -133,6 +167,7 @@ main {
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     overflow: hidden;
+    margin-right: 5px;
 }
 
 .experiencia a {
